@@ -8,14 +8,11 @@ use Cycle\Annotated\Annotation\Column;
 #[Entity]
 class User
 {
-    public function __construct(
-        #[Column(type: "primary")]
-        private int $id,
-    
-        #[Column(type: "string")]
-        private string $name,
-    ) {
-    }
+    #[Column(type: "primary")]
+    private int $id;
+
+    #[Column(type: "string")]
+    private string $username;
 
     public function getId(): int
     {
@@ -24,11 +21,11 @@ class User
 
     public function getName(): string
     {
-        return $this->name;
+        return $this->username;
     }
 
-    public function setName(string $name): void
+    public function setName(string $username): void
     {
-        $this->name = $name;
+        $this->username = $username;
     }
 }
