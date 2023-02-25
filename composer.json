@@ -1,0 +1,20 @@
+{
+    "name": "abdullah/1.php_cycle_orm",
+    "autoload": {
+        "psr-4": {
+            "PhpCycleOrm\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Muhammad Abdullah",
+            "email": "96911855+abdullahaslam2223@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "cycle/orm": "^2.2",
+        "cycle/annotated": "^3.2",
+        "ext-pdo": "*",
+        "ext-pdo_mysql": "*"
+    }
+}
