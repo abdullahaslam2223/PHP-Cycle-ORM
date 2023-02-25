@@ -5,6 +5,6 @@ include 'vendor/autoload.php';
 
 use PhpCycleOrm\Model\User;
 
-$user = new User();
+$user = User::find()->findOne(['username' => 'abdullah256', 'password' =>  'test123']);
 
 print_r($user->get());
